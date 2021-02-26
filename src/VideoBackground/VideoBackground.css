@@ -1,0 +1,10 @@
+.videoBackground{
+    padding-top:300px;
+
+    width: 90%;
+    margin:0 auto;
+}
+.videoBackground__title{
+    font-size:1.8rem;
+    font-weight: 700;
+}

@@ -1,0 +1,78 @@
+.header{
+    padding:30px 40px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__logo img{
+    max-width: 320px;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu span {
+    padding:10px 0px;
+    margin:0px 10px;
+}
+.header__menu span a{
+    text-decoration: none;
+    color:#111;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.header__menu .span__contact{
+    display: flex;
+    
+    align-items: flex-end;
+    
+    flex-direction: column;
+    margin-top:20px;
+    
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+    
+}
+.header__logo span a{
+    color:#111;
+    padding:0 3px;
+}
+.logo__fb{
+    margin-top:25px;
+    display: flex;
+    flex-direction: column;
+}
+.header__search{
+    display: flex;
+    align-items: center;
+}
+.header__input{
+    display: flex;
+    
+}
+.header__input input{
+    width:5em;
+    border-color: #000;
+    outline: 0;
+    border:0;
+    background-color: transparent;
+
+    border-bottom: 1px solid;
+    padding-bottom: .5em;
+}
+.header__input > .MuiSvgIcon-root{
+    font-size:2rem;
+   cursor: pointer;
+}
+
+.header__cart span {
+    font-weight:900;
+    cursor: pointer;
+}
