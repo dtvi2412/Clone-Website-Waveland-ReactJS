@@ -1,0 +1,37 @@
+.bgAttact{
+  margin:20px 0;
+    
+  position: relative;
+  background-image: url("https://salve.edu/sites/default/files/music_theatre_dance_banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+  width: 100%;
+  height: 700px;
+
+}
+.bgAttact__content{
+    position: absolute;
+    top:30%;
+    left:5%;
+    transform: translateX(-5%,-30%);
+    width: 30%;
+}
+.bgAttact__content h1{
+    color:rgb(243, 243, 243);
+    font-size: 2.8rem;
+    font-weight: 800;
+}
+.bgAttact__content button{
+    color:#111;
+    background:#fff;
+    border-radius: 35px;
+    padding:15px;
+    outline: none;border:none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bolder;
+}
