@@ -1,0 +1,153 @@
+footer{
+    margin-top: 50px;
+    margin-bottom: 0;
+}
+.footer__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer{
+    padding:100px;
+    width: 100%;
+    height: 110px;
+}
+.footer h1{
+    text-align: center;
+    color:#fff;
+    font-weight: 900;
+
+    font-size: 2.2rem;
+}
+.footer__music{
+    background-color: #C6A84B;
+    
+}
+.readmore1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.readmore1 p{
+    color:rgb(255, 255, 255);
+    font-size:0.8rem;
+    font-weight: 600;
+}
+.readmore1 > .MuiSvgIcon-root{
+    text-align: center;
+    color:#fff;
+}
+.footer__sponsor{
+    background-color: #D1828C;
+}
+.footer__donate{
+    background-color: #7AC6D8;
+}
+/* bottom footer */
+.footer__bottom{
+  
+    background-color: #111;
+}
+.footer__bottom__content{
+    width: 90%;
+    margin:0px auto;
+    padding:50px 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+h1{
+    margin:0;
+}
+.footer__bottom__one__name h1{
+    color:#fff;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.footer__bottom__one__name p{
+    color:#fff;
+    font-weight: 600;
+    font-size:0.8rem;
+    
+}
+.footer__bottom__one__name p:hover{
+    color:rgb(168, 168, 168)
+}
+.footer__bottom__one__hours h1{
+    font-size:0.9rem;
+    font-weight: bolder;
+    color:rgb(168, 168, 168)
+}
+.footer__bottom__one__hours p{
+    margin-top:20px;
+    color:#fff;
+    font-size: 0.8rem;
+}
+.footer__bottom__one__hours p:hover{
+    color:rgb(168, 168, 168)
+}
+.footer__bottom__about p{
+    color:#fff;
+    font-size:0.8rem;
+    transition: all .3s;    
+}
+.footer__bottom__about p:hover{
+    color:rgb(168, 168, 168);
+ 
+}
+.footer__bottom__about h1{
+    font-size:0.9rem;
+    color:rgb(168, 168, 168)
+}
+.footer__bottom_programs{
+    color:#fff;
+    font-size:0.9rem;
+}
+.footer__bottom__subscribe{
+    color:#fff;
+    font-size:1.2rem;
+    font-weight: 500;
+
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 30%;
+}
+.footer__bottom__subscribe p{
+    color:rgb(105, 103, 103);
+    font-size:1.2rem;
+    text-align: center;
+}
+.footer__bottom__subscribe input{
+    padding:15px;
+    outline: none;
+    border:none;
+    margin-bottom: 20px;
+}
+.footer__bottom__subscribe button{
+    padding:15px;
+    border:none;
+    outline: none;
+    color:#111;
+    font-weight: 500;
+    width: 80%;
+    transition: all .5s;
+    cursor: pointer;
+}
+.footer__bottom__subscribe h3{
+    font-size:1rem;
+    color:#767879
+}
+.footer__bottom__subscribe button:hover{
+    background-color: #767879;
+    color:#fff;
+}
+.input-email{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}

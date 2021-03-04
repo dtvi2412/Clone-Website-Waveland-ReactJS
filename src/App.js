@@ -1,6 +1,8 @@
 
 import './App.css';
 import BackgroundAttactment from './BackgroundAttactment/BackgroundAttactment';
+import Follow from './Follow/Follow';
+import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import SongImage from './SongImage/SongImage';
 import Sponsor from './Sponsor/Sponsor';
@@ -14,6 +16,8 @@ function App() {
      <SongImage/>
      <BackgroundAttactment/>
      <Sponsor/>
+     <Follow/>
+     <Footer/>
     </div>
   );
 }
