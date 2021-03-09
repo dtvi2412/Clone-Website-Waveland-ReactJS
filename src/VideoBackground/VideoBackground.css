@@ -8,3 +8,14 @@
     font-size:1.8rem;
     font-weight: 700;
 }
+@media only screen and (max-width:800px){
+    .videoBackground{
+        padding:20px;
+    }
+}
+@media only screen and (max-width:580px){
+    .videoBackground{
+        padding: 0px;
+      
+    }
+}

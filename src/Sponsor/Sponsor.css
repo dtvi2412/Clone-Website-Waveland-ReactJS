@@ -9,6 +9,8 @@
 }
 .sponsor__logo{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .sponsor__logo .sponsor__logo__item {
@@ -34,4 +36,19 @@
     width:100%;
     height:1px;
     background-color: rgb(182, 179, 179);
+}
+
+@media only screen and (max-width:850px){
+    .sponsor__logo .sponsor__logo__item {
+        width: 350px;
+    }
+}
+@media only screen and (max-width:500px){
+    .sponsor__logo{
+        flex-direction: column;
+    }
+    .sponsor__logo .sponsor__logo__item {
+        width: 200px;
+        margin:0;
+    }
 }

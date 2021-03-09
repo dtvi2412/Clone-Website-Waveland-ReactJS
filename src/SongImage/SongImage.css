@@ -78,3 +78,32 @@
 .songImage__bottom span > .MuiSvgIcon-root{
      text-align: center;
 }
+@media only screen and (max-width:850px){
+    .songImage__top{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .songImage__top__left{
+        margin-bottom: 20px;
+    }
+    .songImage__top__left h1{
+        font-size:2rem;
+    }
+    .songImage__top__left h3{
+        font-size:1.2rem;
+    }
+    .songImage__top__left button{
+        padding:10px;
+        font-size:1rem;
+    }
+    .songImage__bottom{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:580px){
+    .songImage__top__left h1{
+        transform: translateX(0px);
+    }
+}

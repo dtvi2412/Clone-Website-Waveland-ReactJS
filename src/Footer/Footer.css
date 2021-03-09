@@ -151,3 +151,33 @@ h1{
     align-items: center;
     width: 40%;
 }
+@media only screen and (max-width:1250px){
+    .footer__top{
+        flex-direction: column;
+    }
+    .footer__bottom__content{
+        flex-direction: column;
+    }
+    .footer{
+        padding:0px;
+    }
+    .footer h1{
+        font-size:1rem;
+        padding:20px 0;
+        height: 100%;
+    }
+    .footer__bottom__subscribe h1{
+        font-size:1rem;
+       
+    }
+    .footer__bottom__subscribe{
+        width: 50%;
+    }
+    .footer__bottom__subscribe p,.footer__bottom__subscribe h3{
+        font-size:0.9rem;
+    }
+    .input-email {
+        width: 100%;
+        padding-left:120px;
+    }
+}

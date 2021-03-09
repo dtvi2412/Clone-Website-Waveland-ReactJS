@@ -13,8 +13,8 @@
 .bgAttact__content{
     position: absolute;
     top:30%;
-    left:5%;
-    transform: translateX(-5%,-30%);
+    left:15%;
+    transform: translateX(-15%,-30%);
     width: 30%;
 }
 .bgAttact__content h1{
@@ -34,4 +34,29 @@
     align-items: center;
     font-size: 1rem;
     font-weight: bolder;
+    margin-top:30px;
+}
+@media only screen and (max-width:850px){
+  .bgAttact__content h1{
+    font-size:1.5rem;
+  }
+  .bgAttact__content button{
+    padding:5px 10px;
+    font-size:0.8rem;
+  }
+  .bgAttact{
+    height: 600px;
+  }
+}
+@media only screen and (max-width:450px){
+  .bgAttact__content h1{
+    font-size:1.2rem;
+  }
+  .bgAttact__content button{
+    padding:5px 10px;
+    font-size:0.8rem;
+  }
+  .bgAttact{
+    height: 400px;
+  }
 }

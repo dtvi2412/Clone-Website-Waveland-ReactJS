@@ -1,20 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import CloudIcon from '@material-ui/icons/Cloud';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import SearchIcon from '@material-ui/icons/Search';
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 function Header() {
+  const [checkMenu, setCheckMenu] = useState(false);
+  const handleMenu = () => {
+    let menu = document.getElementById('menu');
+    let header = document.getElementById('header');
+    let header__logo = document.getElementById('header__logo');
+    let cart = document.getElementById('cartShopping');
+    let close = document.getElementById('close');
+    if (!checkMenu) {
+      menu.style.display = 'flex';
+      menu.style.flexDirection = 'column';
+      menu.style.alignItems = 'flex-start';
+
+      header__logo.style.display = 'none';
+
+      cart.style.display = 'none';
+
+      close.style.display = 'inline-block';
+
+      setCheckMenu(true);
+    } else {
+      menu.style.display = 'none';
+
+      header.style.background = '#fff';
+      header.style.color = '#111';
+
+      header__logo.style.display = 'inline-block';
+
+      cart.style.display = 'inline-block';
+      close.style.display = 'none';
+      setCheckMenu(false);
+    }
+  };
   return (
-    <header className="header">
-      <div className="header__logo">
+    <header className="header" id="header">
+      <div className="header__logo" id="header__logo">
         <a href="#">
           {' '}
           <img src="https://images.squarespace-cdn.com/content/5a591550f14aa14948c64386/1597865862888-LQ8QRSU0OYIB7U1RN7N3/WAVELAND+LOGO-01.png?format=1500w&content-type=image%2Fpng" />
         </a>
       </div>
-      <div className="header__menu">
+      <div className="header__menu" id="menu">
         <span>
           <a href="#">UPCOMING EVENTS</a>
         </span>
@@ -42,7 +77,7 @@ function Header() {
           <a href="#">CONTACT</a>
         </span>
       </div>
-      <div className="header__logo">
+      <div className="header__logo1">
         <span>
           <a href="#">
             <CloudIcon />
@@ -68,7 +103,27 @@ function Header() {
           <SearchIcon />
         </div>
         <div className="header__cart">
-          <span>CART (0)</span>
+          <div>
+            <span> CART (0)</span>
+            <div className="cart-icon">
+              <ShoppingCartIcon id="cartShopping" />
+              {!checkMenu && (
+                <MenuIcon
+                  onClick={() => {
+                    handleMenu();
+                  }}
+                />
+              )}
+
+              <div id="close">
+                <CloseIcon
+                  onClick={() => {
+                    handleMenu();
+                  }}
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
